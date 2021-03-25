@@ -1,21 +1,25 @@
 //[label /pages/index.js]
 import Link from 'next/link';
 import React, { Component } from 'react'
-import Layout from '../components/MyLayout.js';
-
 const linkStyle = {
   marginRight: 15
 }
 
-export default class extends React.Component {
+export default class extends Component {
   render () {
     return (
-      <Layout>
-        <div>
-        <div>Your Next.js App</div>
-
-        </div>
-      </Layout>
+      <div>
+      <div>Good Time Journal HomeScreen</div>
+      <div> 
+      <div>
+          <Link href="/SignUp">
+          <button>Sign Up</button>
+          </Link>
+      </div>
+      </div>
+      </div>
     )
   }
 }
+
+
