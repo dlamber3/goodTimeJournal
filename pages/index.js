@@ -7,13 +7,13 @@ const linkStyle = {
   marginRight: 15
 }
 
-export default class extends Component {
+export default class extends React.Component {
   render () {
     return (
       <Layout>
         <div>
         <div>Your Next.js App</div>
-        
+
         </div>
       </Layout>
     )
