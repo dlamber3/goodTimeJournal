@@ -14,10 +14,15 @@ export default class extends Component {
       <div> 
       <div>
           <Link href="/SignUp">
-          <button>Sign Up</button>
+            <button>Sign Up</button>
           </Link>
+          
           <Link href="/Delete">
-          <button>Delete</button>
+            <button>Delete</button>
+          </Link>
+
+          <Link href="/Login">
+            <button>Login</button>
           </Link>
       </div>
       </div>

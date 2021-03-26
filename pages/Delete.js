@@ -11,8 +11,9 @@ export default class Delete extends React.Component {
 	}
 
 	handleDelete = () => {
-
-
+		// const user = async deletePerson(this.state.delete);
+		// console.log(user);
+		// this.setState({user});
 
 	}
 
