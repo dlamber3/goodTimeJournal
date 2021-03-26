@@ -1,6 +1,6 @@
 // adding basic node file
 const express = require("express");
-const app = express();
+// const app = express();
 
 const bodyParser = require("body-parser");
 // var dateFormat = require('dateformat');
