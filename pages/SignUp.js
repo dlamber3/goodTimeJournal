@@ -1,4 +1,7 @@
 import Link from 'next/link';
+
+// changed line 22 to password rather than text
+
 export default function SignUp() {
       return (
         <div
@@ -16,7 +19,7 @@ export default function SignUp() {
             <input type="text" id="fname" name="fname"/>
             
             <p> Enter Password: </p>
-            <input type="text" id="fname" name="fname"/>
+            <input type="password" id="fname" name="fname"/>
 
             <p> Enter Name: </p>
             <input type="text" id="fname" name="fname"/>
