@@ -1,31 +1,24 @@
 import React from 'react';
+import { deletePerson } from "../lib/utilDelete.js";
 
-export default class Delete extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {delete:""};
-	}
+function Delete() {
+	const [name, setName] = React.useState("");
 
-	handleUpdate(evt) {
-		this.setState({ delete: evt.target.value });
-	}
+	function handleUpdate(evt) {
+    	setName(evt.target.value);
+    }
 
-	handleDelete = () => {
-		// const user = async deletePerson(this.state.delete);
-		// console.log(user);
-		// this.setState({user});
+    async function handleDelete(evt) {
+    	await deletePerson(name);
+    	alert("Deleted!");
+    }
 
-	}
-
-
-	render() {
-		return (
-			<div>
-				<h1>Good Time, Delete</h1>
-				<h4>Delete Account</h4>
-				<input type="text" value={this.state.delete} onChange={this.handleUpdate.bind(this)} />
-				<button onClick={this.handleDelete.bind(this)}>Delete</button>
-			</div>
-		)
-	}
+    return <div>
+    	<p>Enter a username:</p>
+        <p><input type='text' value={name} onChange={handleUpdate} /></p>
+    	<button className='button-style' onClick={handleDelete}>Delete Account</button>
+    </div>
 }
+
+export default Delete;
+

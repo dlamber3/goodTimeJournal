@@ -12,7 +12,7 @@ export default class extends Component {
       <div>
       <div>Good Time Journal HomeScreen</div>
       <div> 
-      <div>
+      <div style={{margin:"auto auto", display:"flex"}}>
           <Link href="/SignUp">
             <button>Sign Up</button>
           </Link>
